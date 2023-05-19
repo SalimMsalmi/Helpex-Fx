@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjouterPosteController">
+   <children>
+      <AnchorPane layoutX="102.0" layoutY="15.0" prefHeight="485.0" prefWidth="400">
+         <children>
+            <Button layoutX="172.0" layoutY="336.0" mnemonicParsing="false" onAction="#Ajouter" text="Add" />
+            <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="45.0" prefHeight="42.0" prefWidth="370.0" spacing="80.0">
+               <children>
+                  <Label text="Title" textFill="#4840d7" />
+                  <TextField fx:id="Titre" prefHeight="26.0" prefWidth="163.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="99.0" prefHeight="42.0" prefWidth="338.0" spacing="80.0">
+               <children>
+                  <Label text="Description" textFill="#8356ea" />
+               </children>
+            </HBox>
+            <TextArea fx:id="Description" layoutX="108.0" layoutY="110.0" prefHeight="188.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="javax.mail">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Librarys/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/jxmaps-1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/bcrypt-0.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/gson-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/bytes-0.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/itextpdf-5.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/core-3.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/javax.mail .jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/jxmaps-win-1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/jxmapsdemo.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/jython-standalone-2.7.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/mysql-connector-java-8.0.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/restfb-1.24.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/stripe-java-20.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/stripe-java-22.17.0-beta.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Librarys/TrayNotification.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

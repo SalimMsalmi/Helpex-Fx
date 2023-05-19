@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.user_Pro.ItemProUser">
+   <left>
+      <VBox prefHeight="522.0" prefWidth="166.0" style="-fx-background-color: #435ba1;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="tasklabel" prefHeight="48.0" prefWidth="100.0" text="Tasks">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/to_do.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="accomswitch" onMouseClicked="#switchingAccompagnemment" prefHeight="42.0" prefWidth="163.0" text="accompagnement">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/conference-.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></VBox>
+   </left>
+   <top>
+      <HBox prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: rgb(157, 241, 223);" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="80.0" prefWidth="1032.0">
+               <children>
+                  <Pane prefHeight="80.0" prefWidth="168.0" style="-fx-background-color: #435ba1;">
+                     <children>
+                        <Label prefHeight="77.0" prefWidth="180.0" textFill="#dc2e59">
+                           <graphic>
+                              <ImageView fitHeight="76.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/helpexpro.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="80.0" prefWidth="852.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="162.0" style="-fx-background-radius: 50; -fx-background-color: #21cdc0;" text="profil" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children></HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="48.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="418.0" text="        les Items">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color green="0.014000000432133675" blue="0.019999999552965164" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.2009473741054535" green="0.04842105135321617" blue="0.4842105209827423" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Pane prefHeight="44.0" prefWidth="824.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="74.0" layoutX="573.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/todo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="198.0" prefWidth="500.0" style="-fx-background-image: C:\Users\Eya\Documents\GitHub\HELPEX-JAVAFX\workshop3A35\src\images\circle.png;">
+               <children>
+                  <VBox fx:id="vbox" prefHeight="258.0" prefWidth="834.0" />
+               </children></HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="24.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="45.0" prefWidth="1101.0" style="-fx-background-color: #435ba1;" />
+         </children>
+      </HBox>
+   </bottom>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="498.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

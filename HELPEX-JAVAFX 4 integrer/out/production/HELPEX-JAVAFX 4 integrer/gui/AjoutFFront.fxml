@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjoutFFrontController">
+   <children>
+      <TableView fx:id="tableF" layoutX="117.0" layoutY="42.0" prefHeight="334.0" prefWidth="524.0 ">
+         <columns>
+            <TableColumn fx:id="IDColumn" prefWidth="62.4000244140625" text="ID" />
+            <TableColumn fx:id="NOMColumnF" prefWidth="72.0" text="NOM" />
+            <TableColumn fx:id="DESCRIPTIONColumn" prefWidth="91.19992065429688" text="DESCRIPTION" />
+            <TableColumn fx:id="COUTColumn" prefWidth="75.0" text="COUT" />
+            <TableColumn fx:id="PLACEColumn" prefWidth="75.0" text="PLACE" />
+            <TableColumn fx:id="DUREEColumn" prefWidth="151.199951171875" text="DUREE" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnimprimer" layoutX="323.0" layoutY="386.0" mnemonicParsing="false" onAction="#imprimerF" prefHeight="50.0" prefWidth="111.0" text="imprimer" textFill="#0ea6f2" />
+      <Button fx:id="inscribtn" layoutX="503.0" layoutY="386.0" mnemonicParsing="false" onAction="#inscriptionF" prefHeight="50.0" prefWidth="111.0" text="inscription" textFill="#0ea6f2" />
+      <Button fx:id="btnlocalisation" layoutX="127.0" layoutY="386.0" mnemonicParsing="false" onAction="#localisationF" prefHeight="50.0" prefWidth="111.0" text="localisation" textFill="#0ea6f2" />
+      <Label layoutX="313.0" layoutY="7.0" prefHeight="35.0" prefWidth="118.0" text="les formations" textAlignment="CENTER" textFill="#5274fc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

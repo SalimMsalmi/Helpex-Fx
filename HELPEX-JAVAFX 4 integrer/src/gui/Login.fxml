@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="1203.0" style="-fx-background-size: auto; -fx-background-position: center;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+   <children>
+      <ImageView fitHeight="678.0" fitWidth="580.0" layoutX="664.0" opacity="0.9" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="664.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/hands.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="670.0" prefWidth="661.0" style="-fx-background-color: #435ba1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="542.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="58.0" layoutY="61.0" opacity="0.96" prefHeight="556.0" prefWidth="764.0" style="-fx-background-color: white; -fx-background-radius: 10px;" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="422.0" AnchorPane.topAnchor="61.0">
+         <children>
+            <Label layoutX="141.0" layoutY="198.0" prefHeight="59.0" prefWidth="100.0" text="Email">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="132.0" layoutY="280.0" prefHeight="42.0" prefWidth="130.0" text="Mot de passe">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <TextField fx:id="email" layoutX="301.0" layoutY="204.0" prefHeight="46.0" prefWidth="360.0" />
+            <Button fx:id="btnlogin" layoutX="393.0" layoutY="350.0" mnemonicParsing="false" onAction="#Login" prefHeight="42.0" prefWidth="165.0" style="-fx-background-color: #def8f6; -fx-background-radius: 80;" text="Log In">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <Label fx:id="errorMsg" layoutX="114.0" layoutY="149.0" prefHeight="29.0" prefWidth="546.0" style="-fx-background-color: #def8f6;" textAlignment="CENTER" />
+            <HBox layoutX="259.0" layoutY="453.0" prefHeight="29.0" prefWidth="360.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe oublié? " wrappingWidth="150.6390380859375">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Text>
+                  <Button mnemonicParsing="false" onAction="#resetpass" prefHeight="33.0" prefWidth="195.0" style="-fx-background-radius: 50;" text="Reintialiser votre mot de passe." />
+               </children>
+            </HBox>
+            <ImageView fitHeight="211.0" fitWidth="325.0" layoutX="224.0" layoutY="-74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/helpex.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="274.0" layoutY="495.0" prefHeight="29.0" prefWidth="316.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vous n'avez pas de compte?" textAlignment="CENTER" wrappingWidth="165.03900146484364">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Text>
+                  <Button mnemonicParsing="false" onAction="#signupchoose" prefHeight="32.0" prefWidth="138.0" style="-fx-background-radius: 50;" text="Créer un compte." />
+               </children>
+            </HBox>
+            <PasswordField fx:id="mdp" layoutX="301.0" layoutY="275.0" prefHeight="46.0" prefWidth="360.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="30.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ItempostefrontController">
+   <children>
+      <HBox fx:id="itemC" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="54.0" prefWidth="844.0" spacing="5.0" style="-fx-background-color: #435ba1; -fx-background-radius: 50; -fx-background-insets: 0;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+         <children>
+            <Label fx:id="id_poste" alignment="CENTER" contentDisplay="CENTER" opacity="0.0" prefHeight="18.0" prefWidth="81.0" text="ID" textFill="#b7c3d7" />
+            <Label fx:id="titre_poste" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="110.0" text="Titre" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="description_poste" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="406.0" text="Description" textFill="WHITE" />
+            <Button fx:id="modifier" mnemonicParsing="false" onAction="#Modify" prefHeight="27.0" prefWidth="79.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Modifier" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#Delete" prefHeight="27.0" prefWidth="79.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Delete" textFill="WHITE" />
+            <Button fx:id="detail" mnemonicParsing="false" onAction="#Detail" prefHeight="27.0" prefWidth="79.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Details" textFill="WHITE" />
+            <Button fx:id="share" mnemonicParsing="false" onAction="#Share" prefHeight="27.0" prefWidth="79.0" style="-fx-border-color: white; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="Share" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

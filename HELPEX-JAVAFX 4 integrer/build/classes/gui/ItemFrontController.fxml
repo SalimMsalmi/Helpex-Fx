@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="itemP" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="116.0" prefWidth="1115.0" style="-fx-background-color: #435ba1; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ItemProdFrontController">
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+   <Label fx:id="id_produit" prefHeight="18.0" prefWidth="28.0" text="id" textFill="#435ba1" />
+    <Label fx:id="nom_produit" prefHeight="18.0" prefWidth="178.0" text="Nom" textFill="#b7c3d7" />
+   <Label fx:id="categorie_produit" prefHeight="18.0" prefWidth="134.0" text="Categorie" textFill="#b7c3d7" />
+   <Label fx:id="etat_produit" prefHeight="18.0" prefWidth="178.0" text="etat_produit" textFill="#b7c3d7" />
+   <Label fx:id="PrixProduit" prefHeight="18.0" prefWidth="178.0" text="PrixProduit" textFill="#b7c3d7" />
+   <Label fx:id="Created_At" prefHeight="18.0" prefWidth="178.0" text="Created_At" textFill="#b7c3d7" />
+   <Label fx:id="Updated_At" prefHeight="18.0" prefWidth="178.0" text="Updated_At" textFill="#b7c3d7" />
+   <Label fx:id="Authorisation" prefHeight="18.0" prefWidth="178.0" text="Authorisation" textFill="#b7c3d7" />
+    <Button fx:id="supprimer_btn" mnemonicParsing="false" onAction="#supprimerBtn" prefHeight="27.0" prefWidth="149.0" style="-fx-border-color: #F33A6A; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="supprimer">
+        <HBox.margin>
+            <Insets />
+        </HBox.margin>
+    </Button>
+   <Button fx:id="button_modifier_centre" mnemonicParsing="false" onAction="#modifierProduitBtn" prefHeight="27.0" prefWidth="142.0" style="-fx-border-color: #F33A6A; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="modifier" />
+   <Button mnemonicParsing="false" onAction="#detail" prefHeight="27.0" prefWidth="155.0" style="-fx-border-color: #F33A6A; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="details" />
+</HBox>
