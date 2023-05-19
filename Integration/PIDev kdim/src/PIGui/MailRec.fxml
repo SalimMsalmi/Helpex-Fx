@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="600.0" style="-fx-background-color: #f5f5e6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.MailRecController">
+   <children>
+      <TextField fx:id="destad" layoutX="251.0" layoutY="116.0" prefHeight="25.0" prefWidth="312.0" promptText="example@example.com" />
+      <Label layoutX="41.0" layoutY="151.0" prefHeight="25.0" prefWidth="203.0" text="Tap your address :" />
+      <Label layoutX="41.0" layoutY="116.0" prefHeight="25.0" prefWidth="178.0" text="Tap your destination's address :" />
+      <Label layoutX="199.0" layoutY="49.0" prefHeight="33.0" prefWidth="203.0" text="Spirity's Mail Service">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="186.0" prefHeight="25.0" prefWidth="91.0" text="Password :" />
+      <AnchorPane layoutX="43.0" layoutY="307.0" prefHeight="133.0" prefWidth="5.0" style="-fx-background-color: #75aaff;" />
+      <TextArea fx:id="msg" layoutX="251.0" layoutY="260.0" prefHeight="133.0" prefWidth="312.0" promptText="Tap your message." />
+      <TextField fx:id="myad" layoutX="251.0" layoutY="151.0" prefHeight="25.0" prefWidth="312.0" promptText="example@gmail.com" />
+      <TextField fx:id="obj" layoutX="251.0" layoutY="222.0" prefHeight="25.0" prefWidth="312.0" promptText="Tap your object." />
+      <Button layoutX="574.0" layoutY="2.0" mnemonicParsing="false" onAction="#Exit" prefHeight="8.0" prefWidth="24.0" text="X" textAlignment="CENTER" textFill="RED" fx:id="xbtn">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ret" layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#ReturnToRec" text="Return" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="send" defaultButton="true" layoutX="113.0" layoutY="380.0" mnemonicParsing="false" onAction="#SendEmail" text="Send" />
+      <AnchorPane layoutX="525.0" prefHeight="82.0" prefWidth="5.0" style="-fx-background-color: #75aaff;" />
+      <Label layoutX="41.0" layoutY="222.0" prefHeight="25.0" prefWidth="91.0" text="Object :" />
+      <Label layoutX="41.0" layoutY="260.0" prefHeight="25.0" prefWidth="91.0" text="Message :" />
+      <Label fx:id="sent" layoutX="107.0" layoutY="327.0" prefHeight="33.0" prefWidth="51.0" text="Done !" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="251.0" layoutY="186.0" prefHeight="25.0" prefWidth="312.0" promptText="Abcd@1234" />
+   </children>
+</AnchorPane>

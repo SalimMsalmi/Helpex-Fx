@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="600.0" style="-fx-background-color: #f5f5e6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.AddRecController">
+   <children>
+      <AnchorPane layoutY="37.0" prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: #75aaff;">
+         <children>
+            <Label layoutX="217.0" layoutY="9.0" text="Report a Problem" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="53.0" layoutY="94.0" text="How can we help ?">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textobj" layoutX="53.0" layoutY="126.0" prefHeight="25.0" prefWidth="374.0" promptText="Tap the object of your claim." />
+      <Label layoutX="53.0" layoutY="159.0" text="Details :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="area_recBox" layoutX="125.0" layoutY="157.0" prefHeight="25.0" prefWidth="302.0" promptText="Select the area of the problem." />
+      <TextArea fx:id="textsuj" layoutX="53.0" layoutY="191.0" prefHeight="134.0" prefWidth="374.0" promptText="What went wrong ?" />
+      <Button fx:id="sub" defaultButton="true" layoutX="520.0" layoutY="340.0" mnemonicParsing="false" onAction="#AddRec" text="Submit" />
+      <Label layoutX="48.0" layoutY="361.0" prefHeight="17.0" prefWidth="374.0" text="Let us know if you have ideas that can help make our products better. " textFill="#c90000" />
+      <Label layoutX="48.0" layoutY="344.0" prefHeight="17.0" prefWidth="457.0" text="If you need help solving a specific problem, please include as much info as possible." textFill="#c90000" />
+      <Button layoutX="574.0" layoutY="2.0" mnemonicParsing="false" onAction="#Exit" prefHeight="8.0" prefWidth="24.0" text="X" textAlignment="CENTER" textFill="RED" fx:id="xbtn">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="home" layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#Menu" text="Home" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="48.0" layoutY="378.0" text="If you want you can email us too." textFill="#c90000" />
+      <Button fx:id="email" defaultButton="true" layoutX="517.0" layoutY="374.0" mnemonicParsing="false" onAction="#MailingRec" text="Email us" />
+   </children>
+</AnchorPane>

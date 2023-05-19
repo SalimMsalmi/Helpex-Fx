@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.ActController">
+   <children>
+      <TableView fx:id="tabid" layoutX="153.0" layoutY="104.0" prefHeight="278.0" prefWidth="295.0">
+         <columns>
+            <TableColumn fx:id="colnom" prefWidth="143.0" text="Nom" />
+            <TableColumn fx:id="coltype" prefWidth="151.0" text="Type" />
+         </columns>
+      </TableView>
+      <TextField fx:id="cherch" layoutX="208.0" layoutY="55.0" onAction="#cherchetab" onKeyPressed="#cherchetab" prefHeight="25.0" prefWidth="161.0" promptText="chercher" />
+      <ImageView fx:id="imgv5" fitHeight="26.0" fitWidth="41.0" layoutX="153.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/téléchargement%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" layoutX="539.0" layoutY="55.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</AnchorPane>

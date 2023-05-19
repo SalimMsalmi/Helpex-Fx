@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.CreateController">
+   <children>
+      <Button fx:id="btnNewSimple" layoutX="227.0" layoutY="34.0" mnemonicParsing="false" onAction="#new_simp" prefHeight="34.0" prefWidth="173.0" text="Create simple user">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNewPsy" layoutX="228.0" layoutY="100.0" mnemonicParsing="false" onAction="#new_psy" prefHeight="34.0" prefWidth="173.0" text="Create psychologist">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="523.0" layoutY="336.0" mnemonicParsing="false" onAction="#cancel" prefHeight="27.0" prefWidth="8.0" text="Cancel">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNewNutri" layoutX="228.0" layoutY="166.0" mnemonicParsing="false" onAction="#new_nutri" prefHeight="34.0" prefWidth="173.0" text="Create nutriotionist">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNewCoach" layoutX="227.0" layoutY="234.0" mnemonicParsing="false" onAction="#new_coach" prefHeight="34.0" prefWidth="173.0" text="Create coach">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNewAdmin" layoutX="227.0" layoutY="302.0" mnemonicParsing="false" onAction="#new_admin" prefHeight="34.0" prefWidth="173.0" text="Create admin">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

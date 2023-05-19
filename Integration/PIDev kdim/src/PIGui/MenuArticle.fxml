@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="500.0" style="-fx-background-color: white; -fx-background-radius: 1em;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.MenuArticleController">
+   <children>
+      <AnchorPane layoutX="269.0" layoutY="113.0" prefHeight="226.0" prefWidth="300.0">
+         <children>
+            <AnchorPane layoutX="-11.0" layoutY="-66.0" prefHeight="374.0" prefWidth="311.0" style="-fx-background-color: linear-gradient(to right top, #f4f4f4, #f4f4f4, #f4f4f4, #f4f4f4, #f4f4f4); -fx-background-radius: 1em;">
+               <children>
+                  <Button fx:id="btn_affArticles" layoutX="55.0" layoutY="146.0" mnemonicParsing="false" onAction="#ConsulterArticles" prefHeight="36.0" prefWidth="195.0" style="-fx-background-color: linear-gradient(to right top, #233380, #233380, #233380, #233380, #233380); -fx-background-radius: 1em;" text="Consulter Les Articles" textFill="#f8f6f6">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#f8f4f4" glyphName="LIST_ALT" size="30" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_AjoutArticle" layoutX="65.0" layoutY="87.0" mnemonicParsing="false" onAction="#GotoArticles" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to right top, #233380, #233380, #233380, #233380, #233380); -fx-background-radius: 1em;" text="Ajouter un Article" textFill="#f2efef">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#f2f0f0" glyphName="PLUS_SQUARE_ALT" size="30" text="" />
+                     </graphic>
+                  </Button>
+                  <FontAwesomeIconView fx:id="btnmodifier" fill="#f8f7f7" glyphName="EDIT" layoutX="25.0" layoutY="254.0" size="30" text="" />
+                  <Button fx:id="btn_AjoutArticle1" layoutX="65.0" layoutY="289.0" mnemonicParsing="false" onAction="#GotoCat" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to right top, #233380, #233380, #233380, #233380, #233380); -fx-background-radius: 1em;" text="Editer Catégorie" textFill="#f2efef">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="#f2f0f0" glyphName="PLUS_SQUARE_ALT" size="30" text="" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="5.0" prefHeight="439.0" prefWidth="255.0" style="-fx-background-color: linear-gradient(to right top, #233380, #005da8, #0087c8, #00b1e0, #3bdaf2); -fx-background-radius: 1em;">
+         <children>
+            <VBox alignment="CENTER" layoutX="14.0" layoutY="92.0" prefHeight="247.0" prefWidth="229.0">
+               <children>
+                  <Label text="Articles " textFill="WHITE">
+                     <font>
+                        <Font name="Old English Text MT" size="64.0" />
+                     </font>
+                  </Label>
+                  <Label text="&quot;Le monde est un livre ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="144.0" text="dont chaque pas nous ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="ouvre une page.&quot;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

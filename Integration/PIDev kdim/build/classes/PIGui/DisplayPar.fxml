@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="600.0" style="-fx-background-color: #f5f5e6;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.DisplayParController">
+   <children>
+      <Button layoutX="574.0" layoutY="2.0" mnemonicParsing="false" onAction="#Exit" prefHeight="8.0" prefWidth="24.0" text="X" textAlignment="CENTER" textFill="RED" fx:id="xbtn">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ret" layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#Menu" text="Return" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="68.0" layoutY="146.0" prefHeight="250.0" prefWidth="464.0">
+         <columns>
+            <TableColumn fx:id="par" prefWidth="39.0" text="Par" visible="false" />
+            <TableColumn fx:id="user" prefWidth="37.0" text="User" visible="false" />
+            <TableColumn fx:id="event" prefWidth="40.0" text="Event" visible="false" />
+            <TableColumn fx:id="name" minWidth="2.0" prefWidth="139.0" text="Username" />
+            <TableColumn fx:id="date" prefWidth="328.0" sortType="DESCENDING" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="94.0" prefHeight="25.0" prefWidth="180.0" text="Number of participants" textFill="#267ed7">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="212.0" layoutY="27.0" text="List of Participants">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

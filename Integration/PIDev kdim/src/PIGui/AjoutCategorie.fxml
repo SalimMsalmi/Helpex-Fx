@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.AjoutCategorieController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="558.0" prefWidth="628.0" style="-fx-background-color: Transparent;">
+         <children>
+            <AnchorPane layoutX="27.0" layoutY="23.0" prefHeight="548.0" prefWidth="589.0" style="-fx-background-color: whte;" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
+               <children>
+                  <AnchorPane layoutX="274.0" layoutY="67.0" maxWidth="294.0" prefHeight="349.0" prefWidth="281.0" style="-fx-background-color: linear-gradient(to right top, #f4f4f4, #f4f4f4, #f4f4f4, #f4f4f4, #f4f4f4); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="67.0">
+                     <children>
+                        <TabPane layoutX="14.0" layoutY="19.0" prefHeight="310.0" prefWidth="267.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Catégorie">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="278.0" prefWidth="267.0">
+                                       <children>
+                                          <JFXTextField fx:id="ttitre" focusColor="#7fea8d" layoutX="66.0" layoutY="31.0" promptText="Titre catégorie..." unFocusColor="#0a0909" />
+                                          <TableView fx:id="tabv" layoutX="55.0" layoutY="86.0" prefHeight="137.0" prefWidth="144.0">
+                                            <columns>
+                                              <TableColumn fx:id="ColCat" prefWidth="143.0" text="Liste des Catégories" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="34.0" prefHeight="398.0" prefWidth="285.0" style="-fx-background-color: linear-gradient(to right top, #233380, #005da8, #0087c8, #00b1e0, #3bdaf2); -fx-background-radius: 1em;" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="34.0">
+                     <children>
+                        <JFXButton fx:id="tbtn" buttonType="RAISED" layoutX="62.0" layoutY="76.0" onAction="#AjoutCat" prefHeight="44.0" prefWidth="135.0" style="-fx-background-color: linear-gradient(to right top, #233380, #233380, #233380, #233380, #233380);background-image: linear-gradient(to right top, #233380, #233380, #233380, #233380, #233380); -fx-background-radius: 1em;" text="Ajouter" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="tbtn1" buttonType="RAISED" layoutX="62.0" layoutY="147.0" onAction="#Annuler" prefHeight="44.0" prefWidth="135.0" style="-fx-background-color: linear-gradient(to right top, #233380, #233380, #233380, #233380, #233380); -fx-background-radius: 1em;" text="Annuler" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <FontAwesomeIconView fill="#f2f0f0" glyphName="PLUS_SQUARE_ALT" layoutX="70.0" layoutY="108.0" size="30" text="" />
+                        <FontAwesomeIconView fx:id="btnactualiser" fill="#f8f7f7" glyphName="REFRESH" layoutX="73.0" layoutY="175.0" size="20" text="" wrappingWidth="41.571427166461945" />
+                        <JFXButton fx:id="Menu_Article" buttonType="RAISED" layoutX="58.0" layoutY="244.0" onAction="#Menu" prefHeight="44.0" prefWidth="144.0" style="-fx-background-color: linear-gradient(to right top, #233380, #233380, #233380, #233380, #233380); -fx-background-radius: 1em;" text="Menu" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <FontAwesomeIconView fx:id="btnback" fill="#fcf9f9" glyphName="ARROW_CIRCLE_LEFT" layoutX="70.0" layoutY="276.0" size="30" wrappingWidth="23.571433067321777" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

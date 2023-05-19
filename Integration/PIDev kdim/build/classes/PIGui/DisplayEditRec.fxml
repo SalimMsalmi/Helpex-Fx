@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="600.0" style="-fx-background-color: #f5f5e6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.DisplayEditRecController">
+   <children>
+      <Label layoutX="28.0" layoutY="75.0" text="Search Box :" textAlignment="CENTER" textFill="#267ed7">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="search" layoutX="138.0" layoutY="73.0" onKeyReleased="#Search" onKeyTyped="#LettersOnly" prefHeight="25.0" prefWidth="437.0" promptText="Search here." />
+      <TableView fx:id="table" layoutX="8.0" layoutY="127.0" prefHeight="247.0" prefWidth="584.0">
+         <columns>
+            <TableColumn fx:id="rec" prefWidth="39.0" text="Rec" visible="false" />
+            <TableColumn fx:id="obj" prefWidth="102.0" text="Object" />
+            <TableColumn fx:id="area" prefWidth="78.0" text="Area" />
+            <TableColumn fx:id="suj" minWidth="2.0" prefWidth="176.0" text="Subject" />
+            <TableColumn fx:id="etat" minWidth="0.0" onEditCommit="#EditStatusRec" prefWidth="66.0" text="Status" />
+            <TableColumn fx:id="date" prefWidth="161.0" sortType="DESCENDING" text="Date" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="-8.0" layoutY="439.0" prefHeight="12.0" prefWidth="609.0" style="-fx-background-color: #75aaff;" />
+      <Label layoutX="246.0" layoutY="27.0" prefHeight="30.0" prefWidth="111.0" text="All reports" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="574.0" layoutY="2.0" mnemonicParsing="false" onAction="#Exit" prefHeight="8.0" prefWidth="24.0" text="X" textAlignment="CENTER" textFill="RED" fx:id="xbtn">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="home" layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onAction="#Menu" text="Home" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="514.0" layoutY="-7.0" prefHeight="81.0" prefWidth="5.0" style="-fx-background-color: #75aaff;" />
+      <AnchorPane layoutX="514.0" layoutY="98.0" prefHeight="21.0" prefWidth="5.0" style="-fx-background-color: #75aaff;" />
+      <Button fx:id="pdf" defaultButton="true" layoutX="259.0" layoutY="394.0" mnemonicParsing="false" onAction="#CreatePDF" text="Save to PDF" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

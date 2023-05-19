@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.EditEventController">
+    <children>
+        <TableView fx:id="tabid" layoutX="47.0" layoutY="248.0" prefHeight="333.0" prefWidth="762.0">
+            <columns>
+                <TableColumn fx:id="colnom" onEditCommit="#modifNom" prefWidth="63.0" text="Nom" />
+                <TableColumn fx:id="coltype" prefWidth="81.0" text="Type" />
+                <TableColumn fx:id="colemplacement" prefWidth="124.0" text="Emplacement" />
+                <TableColumn fx:id="colDate_deb" prefWidth="89.0" text="Date_deb" />
+                <TableColumn fx:id="colDate_fin" prefWidth="86.0" text="Date_fin" />
+                <TableColumn fx:id="colTemps_deb" prefWidth="85.0" text="Temps_deb" />
+                <TableColumn fx:id="colTemps_fin" prefWidth="84.0" text="Temps_fin" />
+                <TableColumn fx:id="colAge_min" prefWidth="69.0" text="Age_min" />
+                <TableColumn fx:id="colAge_max" text="Age_max" />
+            </columns>
+        </TableView>
+      <TextField fx:id="cherch" layoutX="326.0" layoutY="191.0" onAction="#cherchetab" onKeyPressed="#cherchetab" prefHeight="25.0" prefWidth="286.0" />
+      <AnchorPane layoutX="47.0" layoutY="137.0" prefHeight="54.0" prefWidth="191.0" style="-fx-background-color: FC9488;">
+         <children>
+            <Text layoutX="57.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Event" wrappingWidth="107.34765625">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="imgview3" fitHeight="25.0" fitWidth="25.0" layoutX="17.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Sans%20edit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imgview" fitHeight="138.0" fitWidth="165.0" layoutX="4.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/Capture.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageview1" fitHeight="25.0" fitWidth="26.0" layoutX="270.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/téléchargement%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pdf" layoutX="692.0" layoutY="175.0" mnemonicParsing="false" onAction="#CreatePDF" prefHeight="32.0" prefWidth="76.0" text="PDF" />
+      <Button fx:id="back" layoutX="738.0" layoutY="114.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="52.0" text="Back" />
+    </children>
+</AnchorPane>

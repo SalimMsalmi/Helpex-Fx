@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.LoginWhoController">
+   <children>
+      <Button fx:id="loginS" layoutX="217.0" layoutY="31.0" mnemonicParsing="false" onAction="#gotosimple" prefHeight="34.0" prefWidth="173.0" style="-fx-background-color: #25FDE9;" text=" Login as simple user">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginA" layoutX="217.0" layoutY="101.0" mnemonicParsing="false" onAction="#gotoadmin" prefHeight="34.0" prefWidth="166.0" style="-fx-background-color: #25FDE9;" text="Login as admin">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginC" layoutX="217.0" layoutY="172.0" mnemonicParsing="false" onAction="#gotocoach" prefHeight="34.0" prefWidth="166.0" style="-fx-background-color: #25FDE9;" text="Login as coach">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginP" layoutX="217.0" layoutY="248.0" mnemonicParsing="false" onAction="#gotopsy" prefHeight="34.0" prefWidth="173.0" style="-fx-background-color: #25FDE9;" text="Login as psychologist">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginN" layoutX="217.0" layoutY="316.0" mnemonicParsing="false" onAction="#gotonutri" prefHeight="34.0" prefWidth="166.0" style="-fx-background-color: #25FDE9;" text="Login as nutritionist">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancel" layoutX="14.0" layoutY="333.0" mnemonicParsing="false" onAction="#cancel" prefHeight="34.0" prefWidth="79.0" style="-fx-background-color: #25FDE9;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

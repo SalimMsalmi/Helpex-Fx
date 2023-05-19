@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIGui.GestionUController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="433.0" fitWidth="686.0" layoutX="-10.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../ezzz.jpg" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="227.0" fitWidth="238.0" layoutX="226.0" layoutY="125.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Présentation/logo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </ImageView>
+            <TableView fx:id="Table_User" layoutX="14.0" layoutY="49.0" prefHeight="151.0" prefWidth="296.0">
+               <columns>
+                  <TableColumn fx:id="usernameS" prefWidth="75.0" text="Username" />
+                  <TableColumn fx:id="mailS" prefWidth="75.0" text="Mail" />
+                  <TableColumn fx:id="dateS" prefWidth="75.0" text="Date" />
+               </columns>
+            </TableView>
+            <TableView fx:id="Table_Psy" layoutX="372.0" layoutY="49.0" prefHeight="151.0" prefWidth="296.0">
+               <columns>
+                  <TableColumn fx:id="usernameP" prefWidth="75.0" text="Username" />
+                  <TableColumn fx:id="mailP" prefWidth="75.0" text="Mail" />
+                  <TableColumn fx:id="dateP" prefWidth="75.0" text="Date" />
+               </columns>
+            </TableView>
+            <TableView fx:id="Table_Nutri" layoutX="14.0" layoutY="258.0" prefHeight="151.0" prefWidth="296.0">
+               <columns>
+                  <TableColumn fx:id="usernameN" prefWidth="75.0" text="Username" />
+                  <TableColumn fx:id="mailN" prefWidth="75.0" text="Mail" />
+                  <TableColumn fx:id="dateN" prefWidth="75.0" text="Date" />
+               </columns>
+            </TableView>
+            <TableView fx:id="Table_Coach" layoutX="372.0" layoutY="258.0" prefHeight="151.0" prefWidth="296.0">
+               <columns>
+                  <TableColumn fx:id="usernameC" prefWidth="75.0" text="Username" />
+                  <TableColumn fx:id="mailC" prefWidth="75.0" text="Mail" />
+                  <TableColumn fx:id="dateC" prefWidth="75.0" text="Date" />
+               </columns>
+            </TableView>
+            <Text fill="#3cbfae" layoutX="21.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Simple user" underline="true">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#3cbfae" layoutX="387.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Psychologist" underline="true">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#3cbfae" layoutX="20.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nutritionist" underline="true">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#3cbfae" layoutX="389.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coach" underline="true">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="searchS" layoutX="178.0" layoutY="14.0" prefHeight="25.0" prefWidth="125.0" promptText="Username..">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="searchP" layoutX="538.0" layoutY="14.0" prefHeight="25.0" prefWidth="125.0" promptText="Username..">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="searchN" layoutX="164.0" layoutY="226.0" prefHeight="25.0" prefWidth="125.0" promptText="Username..">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="searchC" layoutX="538.0" layoutY="226.0" prefHeight="25.0" prefWidth="125.0" promptText="Username..">
+               <font>
+                  <Font name="Bell MT" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="imprS" layoutX="312.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnImprS" text="impr S" />
+            <Button fx:id="imprN" layoutX="311.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnImprN" text="impr N" />
+            <Button fx:id="imprP" layoutX="312.0" layoutY="49.0" mnemonicParsing="false" onAction="#btnImprP" text="impr P" />
+            <Button fx:id="imprC" layoutX="312.0" layoutY="269.0" mnemonicParsing="false" onAction="#btnImprC" text="impr C" />
+            <Label fx:id="lbUsername" layoutX="271.0" layoutY="202.0" prefHeight="20.0" prefWidth="148.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="logout" layoutX="312.0" layoutY="384.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+            <Button fx:id="btnReclamation" layoutX="451.0" layoutY="199.0" mnemonicParsing="false" onAction="#reclamation" text="Reclamations" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
