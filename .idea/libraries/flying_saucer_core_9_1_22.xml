@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="flying-saucer-core-9.1.22">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/jjjjj/flying-saucer-core-9.1.22.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jjjjj/flying-saucer-pdf-itext5-9.1.22.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jjjjj/itextpdf-5.5.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

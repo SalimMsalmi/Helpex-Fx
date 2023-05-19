@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="1203.0" style="-fx-background-color: #435ba1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apex.helpex.GUI.SignUpChooseController">
+   <children>
+      <ImageView fitHeight="670.0" fitWidth="473.0" layoutX="-76.0" opacity="0.9" pickOnBounds="true">
+         <image>
+            <Image url="@../images/hands.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="317.0" layoutY="82.0" prefHeight="504.0" prefWidth="763.0" style="-fx-background-color: #def8f6;" AnchorPane.bottomAnchor="84.39999999999998" AnchorPane.leftAnchor="317.0" AnchorPane.rightAnchor="122.79999999999995" AnchorPane.topAnchor="82.0">
+         <children>
+            <Pane layoutX="-4.0" prefHeight="504.0" prefWidth="392.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="-41.0" layoutY="24.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #def8f6;" text="Back" />
+               </children></Pane>
+            <ImageView fitHeight="231.0" fitWidth="339.0" layoutX="46.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/helpex.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="219.0" fitWidth="329.0" layoutX="401.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/helpexpro.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="87.0" layoutY="326.0" mnemonicParsing="false" onAction="#client" prefHeight="56.0" prefWidth="257.0" style="-fx-background-color: #21cdc0;" text="Créer un compte Client Helpex" />
+            <Button layoutX="437.0" layoutY="326.0" mnemonicParsing="false" onAction="#pro" prefHeight="56.0" prefWidth="257.0" style="-fx-background-color: #21cdc0;" text="Créer un compte Partenaire Helpex" />
+         </children></Pane>
+   </children>
+</AnchorPane>

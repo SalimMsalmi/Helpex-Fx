@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.user_Pro.AccompagnementUserPro">
+   <center>
+      <VBox prefHeight="428.0" prefWidth="603.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="56.0" prefWidth="500.0">
+               <children>
+                  <Pane prefHeight="56.0" prefWidth="943.0">
+                     <children>
+                        <Label text="mes accompagnememnts" textFill="#05bfdb">
+                           <font>
+                              <Font size="21.0" />
+                           </font></Label>
+                        <Label fx:id="number" layoutX="249.0" layoutY="-7.0" text="0" textFill="#00ffca">
+                           <font>
+                              <Font size="30.0" />
+                           </font></Label>
+                        <TextField fx:id="hhh" layoutX="335.0" layoutY="3.0" onKeyReleased="#handleKeyReleased" prefHeight="25.0" prefWidth="459.0" promptText="recherche" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox fx:id="hboxAccompagnement" prefHeight="254.0" prefWidth="636.0">
+               <children>
+                  <TableView fx:id="accompagnement_Table" prefHeight="254.0" prefWidth="961.0" style="-fx-background-color: BD0A4D68CDD6;" tableMenuButtonVisible="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="510.0" prefWidth="220.0" style="-fx-background-color: #435ba1;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="tasklabel" onMouseClicked="#switchingTasks" prefHeight="42.0" prefWidth="105.0" text="Tasks">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="30.0" onMouseClicked="#switchingTasks" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/to_do.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="accomswitch" onMouseClicked="#switchingAccompagnemment" prefHeight="42.0" prefWidth="221.0" text="accompagnement">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/conference-.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></VBox>
+   </left>
+   <top>
+      <HBox prefHeight="90.0" prefWidth="736.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="90.0" prefWidth="251.0" style="-fx-background-color: #def8f6;">
+               <children>
+                  <Label prefHeight="101.0" prefWidth="242.0" textFill="#dc2e59">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="98.0" fitWidth="195.0" layoutX="36.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/helpexpro.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="914.0" style="-fx-background-color: #def8f6;">
+               <children>
+                  <HBox layoutX="17.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="62.0" prefWidth="916.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="102.0" style="-fx-background-radius: 50; -fx-background-color: #21cdc0;" text="Profil" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
