@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.admin.AccompagnmemntsAdmin">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #05071F;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="298.0" prefWidth="646.0">
+               <children>
+                  <TableView fx:id="AdminAccompagnementTable" prefHeight="127.0" prefWidth="646.0">
+                    <columns>
+                        <TableColumn fx:id="colId" prefWidth="48.79998779296875" text="#" />
+                      <TableColumn fx:id="userIdCol" prefWidth="199.20001220703125" text="user" />
+                      <TableColumn fx:id="userProId" prefWidth="172.79995727539062" text="userPro" />
+                        <TableColumn fx:id="taskId" prefWidth="117.5999755859375" text="task" />
+                        <TableColumn fx:id="statuts" prefWidth="108.0" text="statuts" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="330.0" prefWidth="155.0" style="-fx-background-color: #05071F;" BorderPane.alignment="CENTER">
+         <children>
+            <Label onMouseClicked="#switchingDashboard" prefHeight="30.0" prefWidth="158.0" text="Dashboard" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/noticeboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="tasksSideNav" onMouseClicked="#switching" prefHeight="42.0" prefWidth="105.0" text="Tasks" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/to_do.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="AccompagnementLabel" prefHeight="42.0" prefWidth="151.0" text="accompagnement" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/conference-.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="65.0" prefWidth="746.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="82.0" prefWidth="158.0" style="-fx-background-color: #05071F;">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="163.0" text="HELPEX" textFill="#dc2e59">
+                     <graphic>
+                        <ImageView fitHeight="63.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/helpexpro.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="90.0" prefWidth="592.0" style="-fx-background-color: #05071F;">
+               <children>
+                  <Label layoutX="763.0" layoutY="4.0" prefHeight="19.0" prefWidth="63.0" text="user">
+                     <graphic>
+                        <ImageView fitHeight="19.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </Pane>
+         </children></HBox>
+   </top>
+</BorderPane>
