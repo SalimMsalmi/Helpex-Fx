@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="192.0" prefWidth="659.0" style="-fx-background-color: #ffffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CaisseOrgFrontController">
+   <children>
+      <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/caisse.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="137.0" layoutY="21.0" prefHeight="18.0" prefWidth="125.0" text="Nom organisation :" />
+      <Label layoutX="137.0" layoutY="55.0" prefHeight="18.0" prefWidth="103.0" text="Description:" />
+      <Label layoutX="137.0" layoutY="96.0" prefHeight="18.0" prefWidth="62.0" text="Goal:" />
+      <Label layoutX="137.0" layoutY="135.0" prefHeight="18.0" prefWidth="68.0" text="Montant:" />
+      <Label fx:id="nomOrg" layoutX="283.0" layoutY="21.0" prefHeight="18.0" prefWidth="180.0" text="Nom organisation " />
+      <Label fx:id="GoalCaisse" layoutX="249.0" layoutY="96.0" prefHeight="18.0" prefWidth="169.0" text="Nom organisation " />
+      <Label fx:id="MontantCaisse" layoutX="240.0" layoutY="135.0" prefHeight="18.0" prefWidth="190.0" text="Nom organisation " />
+      <Label fx:id="descriptionCaisse" layoutX="263.0" layoutY="55.0" prefHeight="18.0" prefWidth="180.0" text="Description" />
+      <Button layoutX="542.0" layoutY="140.0" mnemonicParsing="false" onAction="#payer" text="Faire un Don" />
+      <Label id="IdC" fx:id="IdC" layoutX="465.0" layoutY="96.0" opacity="0.0" prefHeight="18.0" prefWidth="180.0" text="IdCaisse" />
+   </children>
+</AnchorPane>
