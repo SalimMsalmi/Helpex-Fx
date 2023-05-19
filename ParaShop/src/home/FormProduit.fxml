@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="532.0" prefWidth="806.0" style="-fx-background-radius: 50; -fx-background-color: #40B5AD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.FormProduitController">
+   <children>
+      <Pane layoutX="34.0" layoutY="33.0" prefHeight="466.0" prefWidth="738.0" style="-fx-background-color: #40B5AD; -fx-background-radius: 50; -fx-border-color: white; -fx-border-radius: 50; -fx-border-width: 5;">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="149.0" layoutX="-4.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/helpex.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="144.0" prefHeight="18.0" prefWidth="127.0" text="Nom Produit" textFill="#e7e5e5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nom_produit" layoutX="176.0" layoutY="137.0" prefHeight="34.0" prefWidth="238.0" promptText="Nom Produit ...." />
+            <Label layoutX="37.0" layoutY="193.0" prefHeight="30.0" prefWidth="135.0" text="Prix Produit" textFill="#e7e5e5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="319.0" prefHeight="18.0" prefWidth="106.0" text="Etat Produit" textFill="#e7e5e5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="259.0" prefHeight="18.0" prefWidth="127.0" text="Categorie Produit" textFill="#e7e5e5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="prix_produit" layoutX="176.0" layoutY="191.0" prefHeight="34.0" prefWidth="238.0" promptText="Prix Produit ..." />
+            <ChoiceBox fx:id="CatProduitChoice" layoutX="176.0" layoutY="257.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="EtatProdChoices" layoutX="175.0" layoutY="317.0" prefWidth="150.0" />
+            <Button fx:id="SaveProduit" layoutX="175.0" layoutY="381.0" mnemonicParsing="false" onAction="#AddProduit" prefHeight="47.0" prefWidth="135.0" text="Save" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

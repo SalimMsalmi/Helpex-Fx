@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="1203.0" style="-fx-background-color: #435ba1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.ProduitFrontController">
+   <children>
+      <Pane prefHeight="111.0" prefWidth="1374.0" style="-fx-background-color: #def8f6;">
+         <children>
+            <HBox layoutX="217.0" layoutY="81.0" prefHeight="66.0" prefWidth="938.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="102.0" style="-fx-background-radius: 50; -fx-background-color: #21cdc0;" text="Home" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="102.0" style="-fx-background-radius: 50; -fx-background-color: #435ba1;" text="Accompagnement" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="102.0" style="-fx-background-radius: 50; -fx-background-color: #21cdc0;" text="formations" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="102.0" style="-fx-background-radius: 50; -fx-background-color: #435ba1;" text="blog" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="102.0" style="-fx-background-radius: 50; -fx-background-color: #F33A6A;" text="shop" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="102.0" style="-fx-background-radius: 50; -fx-background-color: #435ba1;" text="Profile" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#signout" prefHeight="58.0" prefWidth="102.0" style="-fx-background-radius: 50; -fx-background-color: #21cdc0;" text="SignOut" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <ImageView fitHeight="167.0" fitWidth="272.0" layoutX="-11.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/helpex.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="297.0" layoutY="158.0" prefHeight="92.0" prefWidth="554.0" spacing="50.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="22000" textFill="#2a73ff">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total Produits" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="1500" textFill="#26bfbc">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Total delivered" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="1000" textFill="#fa6180">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Peding Orders" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="780" textFill="#de0000">
+                     <font>
+                        <Font name="System Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label text="Orders on Hold" textFill="#e7e5e5" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Pane layoutX="114.0" layoutY="242.0" prefHeight="413.0" prefWidth="1123.0" style="-fx-background-color: #40B5AD; -fx-background-radius: 50;">
+         <children>
+            <Label layoutX="27.0" layoutY="24.0" prefHeight="18.0" prefWidth="127.0" text="Nom Produit" textFill="#e7e5e5" />
+            <Label layoutX="136.0" layoutY="24.0" prefHeight="18.0" prefWidth="111.0" text="Categorie Produit" textFill="#e7e5e5" />
+            <Label layoutX="311.0" layoutY="24.0" prefHeight="18.0" prefWidth="106.0" text="Etat Produit" textFill="#e7e5e5" />
+            <Label layoutX="434.0" layoutY="24.0" prefHeight="18.0" prefWidth="111.0" text="PrixProduit" textFill="#e7e5e5" />
+            <Label layoutX="558.0" layoutY="24.0" prefHeight="18.0" prefWidth="76.0" text="Created At" textFill="#e7e5e5" />
+            <Label layoutX="640.0" layoutY="24.0" prefHeight="18.0" prefWidth="80.0" text="Updated At" textFill="#e7e5e5" />
+            <Label layoutX="736.0" layoutY="24.0" prefHeight="18.0" prefWidth="81.0" text="Authorisation" textFill="#e7e5e5" />
+            <Label layoutX="878.0" layoutY="24.0" prefHeight="18.0" prefWidth="154.0" text="Actions" textFill="#e7e5e5" />
+            <Button contentDisplay="CENTER" defaultButton="true" layoutX="1055.0" layoutY="18.0" mnemonicParsing="false" onAction="#AjouterInterface" prefHeight="30.0" prefWidth="33.0" text="+" wrapText="true" />
+            <ScrollPane layoutX="14.0" layoutY="49.0" prefHeight="340.0" prefWidth="1087.0" style="-fx-border-radius: 50;" stylesheets="@../../../ParaShop/src/home/style.css">
+               <content>
+                  <VBox fx:id="pnItems" prefHeight="340.0" prefWidth="1201.0" spacing="5.0" style="-fx-background-color: #40B5AD;">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <Button layoutX="990.0" layoutY="21.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+         </children>
+      </Pane>
+      <TextField fx:id="searchfield" layoutX="911.0" layoutY="191.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #40B5AD; -fx-border-color: #F33A6A; -fx-border-radius: 2em;" />
+   </children>
+</AnchorPane>
