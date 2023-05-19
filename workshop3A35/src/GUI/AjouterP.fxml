@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjouterPController">
+   <children>
+      <Label layoutX="108.0" layoutY="106.0" text="Titre" />
+      <Label layoutX="90.0" layoutY="172.0" text="Description" />
+      <TextField fx:id="fxNom" layoutX="274.0" layoutY="102.0" />
+      <TextField fx:id="fxPrenom" layoutX="274.0" layoutY="168.0" />
+      <Button fx:id="fxAjouter" layoutX="274.0" layoutY="306.0" mnemonicParsing="false" onAction="#save" text="Ajouter" />
+   </children>
+</AnchorPane>
