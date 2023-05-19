@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/FormCatProdController.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/ItemCatProduit.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/FormPosteController.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/OrganisationFormController.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/StripeTest.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/interfaces/OrganisationInterface.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/stripe.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/ProduitsCntroller.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/OrganisationForm.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/Organisation.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/entities/CaisseOrganisation.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/firstwindow.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/CaisseForm.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/CatProdController.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/interfaces/InterfaceProduit.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/stripe.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/entities/Produit.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/FormCatProduit.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/services/CrudProduits.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/services/CaisseOrganisationCRUD.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/interfaces/InterfaceCatProduit.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/CaisseForm.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/utils/MyConnection.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/Produits.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/OrganisationDetails.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/utils/JavaMail.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/interfaces/CaisseOrganisationInterface.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/StatProdController.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/services/OrganisationCRUD.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/ItemCatProdController.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/OrganisationController.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/StatOrg.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/CatProduit.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/entities/Organisation.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/statProd.fxml</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/entities/CategorieProduit.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/ItemposteController.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/OrganisationDetails.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/gui/SocialnetworkController.java</file>
+            <file>file:/C:/Users/USER/OneDrive/Documents/NetBeansProjects/HELPEX-JAVAFX-Formation/src/services/CrudCategorieProduit.java</file>
+        </group>
+    </open-files>
+</project-private>
